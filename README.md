@@ -54,7 +54,7 @@ cd BearMusic
 ```sh
 yarn install
 ```
-환경 변수 설정  
+### 환경 변수 설정  
 프로젝트 루트에 `.env` 파일을 생성하고, `.env.example` 파일을 참고하여 필요한 환경 변수를 설정합니다.
 > GPU 사용 안함 = ""  
 > 리눅스 / 라즈베리파이 = "egl"  
@@ -67,7 +67,9 @@ GOOGLE_ACCOUNT_PASS=""
 GL=""
 ```
 #### 실행
-> `createQueue.mjs`는 차트 기반 자동 플레이리스트를 구성하는 스크립트입니다.  
+> `node ./createQueue.mjs` 차트 기반 자동 플레이리스트를 구성  
+> `node ./createPlaylist.mjs [플레이리스트 ID]` 벅스 뮤직PD 앨범을 기반으로 플레이리스트를 구성  
+> `node ./createSingle.mjs [트랙 ID]` 트랙 ID 기반으로 플레이리스트를 구성  
 > 영상 생성 전에 먼저 실행해주세요.
 ```sh
 node .\createQueue.mjs
