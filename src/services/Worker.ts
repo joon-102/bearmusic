@@ -184,7 +184,7 @@ export async function startWorker() {
                 `📝 영상 피드백을 받고 있습니다!`,
                 `Forms: https://bit.ly/46duNSf`,
                 ``,
-                `#${artist.replace(/\([^)]*\)/g, '').replace("(", "").replace(")", "").trim().replace(/[^a-zA-Z0-9가-힣]/g, '')} #${title.replace(/\([^)]*\)/g, '').replace("(", "").replace(")", "").trim().replace(/[^a-zA-Z0-9가-힣]/g, '')} #가사`
+                `#${artist.replace(/\([^)]*\)/g, '').replace("(", "").replace(")", "").trim().replace(/[^a-zA-Z0-9가-힣]/g, '')} #${title.replace(/\([^)]*\)/g, '').replace("(", "").replace(")", "").trim().replace(/[^a-zA-Z0-9가-힣]/g, '')} #가사 #LYRICS #BEARMUSIC`
             ].join('\n')),
             language: 'korean',
             skipProcessingWait: true,
